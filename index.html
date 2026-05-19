@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stugit - Creative Developer</title>
+    <title>stugit - Senior Data Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,6 +14,7 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#expertise" class="nav-link">Expertise</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -29,10 +30,10 @@
     <section id="home" class="hero">
         <div class="stars"></div>
         <div class="container hero-content">
-            <h1 class="hero-title">Creative Development</h1>
-            <p class="hero-subtitle">Building modern, reactive web experiences</p>
+            <h1 class="hero-title">Senior Data Engineer</h1>
+            <p class="hero-subtitle">Architecting scalable data solutions on Google Cloud Platform</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary">Get Started</button>
+                <button class="btn btn-primary">View My Work</button>
                 <button class="btn btn-secondary">Learn More</button>
             </div>
         </div>
@@ -49,28 +50,57 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate developer focused on creating beautiful, functional web experiences. With a strong foundation in modern web technologies, I build responsive and interactive applications that solve real problems.</p>
-                    <p>My approach combines clean code practices with cutting-edge design principles to deliver projects that users love.</p>
+                    <p>I'm a Senior Data Engineer with extensive experience designing and implementing large-scale data infrastructure on Google Cloud Platform. Specialized in building robust data pipelines, optimizing cloud resources, and enabling data-driven decision making across organizations.</p>
+                    <p>My approach combines infrastructure-as-code principles with data engineering best practices to deliver scalable, maintainable, and cost-efficient data solutions that process terabytes of data reliably.</p>
                 </div>
                 <div class="skills">
                     <div class="skill-item">
-                        <h3>Frontend</h3>
+                        <h3>GCP Data Stack</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Data Pipeline Design</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Cloud Infrastructure</h3>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 90%"></div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <h3>Design</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h3>Backend</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">☁️</div>
+                    <h3>Google Cloud Platform</h3>
+                    <p class="tech-stack">BigQuery • Dataflow • Dataproc • Cloud SQL • Pub/Sub • Cloud Storage • Composer</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">⚙️</div>
+                    <h3>Data Technologies</h3>
+                    <p class="tech-stack">Apache Spark • PySpark • Apache Airflow • dbt • Kafka • PostgreSQL</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">🏗️</div>
+                    <h3>Infrastructure & IaC</h3>
+                    <p class="tech-stack">Terraform • Python • Bash • CI/CD • Docker • Kubernetes</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">📊</div>
+                    <h3>Data Solutions</h3>
+                    <p class="tech-stack">ETL/ELT Pipelines • Data Warehousing • Real-time Streaming • Analytics</p>
                 </div>
             </div>
         </div>
@@ -82,27 +112,35 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #1f76d2 0%, #34a853 100%)"></div>
+                    <div class="project-info">
+                        <h3>Dataproc ETL Pipeline</h3>
+                        <p>Engineered large-scale ETL processing using Dataproc clusters and PySpark, processing multi-terabyte datasets with optimized cluster auto-scaling and cost controls.</p>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
                     <div class="project-info">
-                        <h3>Project One</h3>
-                        <p>A modern web application with real-time updates and interactive components.</p>
-                        <a href="#" class="project-link">View Project →</a>
+                        <h3>BigQuery Data Warehouse</h3>
+                        <p>Architected a centralized data warehouse leveraging BigQuery's analytical capabilities, enabling sub-second query performance on petabyte-scale datasets with cost optimization.</p>
+                        <a href="#" class="project-link">Learn More →</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"></div>
                     <div class="project-info">
-                        <h3>Project Two</h3>
-                        <p>An engaging user interface combining beautiful design with seamless functionality.</p>
-                        <a href="#" class="project-link">View Project →</a>
+                        <h3>Terraform IaC Automation</h3>
+                        <p>Built infrastructure-as-code modules using Terraform for reproducible GCP deployments, enabling multi-environment consistency and reducing manual provisioning by 90%.</p>
+                        <a href="#" class="project-link">Learn More →</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"></div>
                     <div class="project-info">
-                        <h3>Project Three</h3>
-                        <p>Responsive design with performance optimization and accessibility in mind.</p>
-                        <a href="#" class="project-link">View Project →</a>
+                        <h3>Real-time Data Streaming</h3>
+                        <p>Designed and deployed real-time streaming pipelines using Cloud Dataflow, processing millions of events per minute with sub-second latency and exactly-once semantics.</p>
+                        <a href="#" class="project-link">Learn More →</a>
                     </div>
                 </div>
             </div>
@@ -113,7 +151,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Have a project in mind? Let's create something amazing together.</p>
+            <p class="contact-subtitle">Interested in collaborating on data engineering projects? Let's connect.</p>
             <form class="contact-form" id="contactForm">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Your Name" required>
@@ -122,7 +160,7 @@
                     <input type="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <textarea name="message" placeholder="Tell me about your project or opportunity" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-large">Send Message</button>
             </form>
@@ -132,11 +170,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 stugit. All rights reserved.</p>
+            <p>&copy; 2026 stugit. Senior Data Engineer. All rights reserved.</p>
             <div class="social-links">
                 <a href="#" class="social-link">GitHub</a>
-                <a href="#" class="social-link">Twitter</a>
                 <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Medium</a>
             </div>
         </div>
     </footer>
