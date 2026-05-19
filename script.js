@@ -1,12 +1,16 @@
 // Smooth scroll navigation
 const navLinks = document.querySelectorAll('.nav-link');
 const navMenu = document.querySelector('.nav-menu');
+const hamburger = document.querySelector('.hamburger');
 
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         navLinks.forEach(l => l.classList.remove('active'));
         link.classList.add('active');
         navMenu.classList.remove('active');
+        if (hamburger) {
+            hamburger.classList.remove('active');
+        }
     });
 });
 
@@ -40,12 +44,9 @@ window.addEventListener('scroll', () => {
 });
 
 // Hamburger menu
-const hamburger = document.querySelector('.hamburger');
-const navMenuElement = document.querySelector('.nav-menu');
-
 if (hamburger) {
     hamburger.addEventListener('click', () => {
-        navMenuElement.classList.toggle('active');
+        navMenu.classList.toggle('active');
         hamburger.classList.toggle('active');
     });
 }
@@ -67,6 +68,9 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe all skill bars
 document.querySelectorAll('.skill-progress').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
 
@@ -110,8 +114,10 @@ window.addEventListener('scroll', () => {
 // Mobile menu close on link click
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenuElement.classList.remove('active');
+        if (hamburger) {
+            hamburger.classList.remove('active');
+        }
+        navMenu.classList.remove('active');
     });
 });
 
